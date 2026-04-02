@@ -41,7 +41,7 @@ a {
     font-size: 0.9375rem;
     padding: 0.75rem 2.5rem;
     border-radius: 1.5625rem;
-    background-color: var(--grey);
+    background: var(--grey);
 }
 
 section{
@@ -49,7 +49,7 @@ section{
 }
 
 .sedans {
-    background-color: var(--orange);
+    background: var(--orange);
     border-radius: 8px 8px 0 0;
 }
 
@@ -58,17 +58,45 @@ section{
 }
 
 .suvs {
-    background-color: var(--cyan);
+    background: var(--cyan);
 }
 .suvs a {
     color: var(--cyan);
 }
 
 .luxuosos {
-    background-color: var(--dark-cyan);
+    background: var(--dark-cyan);
     border-radius: 0 0 8px 8px;
 }
 
 .luxuosos a {
     color: var(--dark-cyan);
+}
+
+@media(min-width:920px) {
+    body{
+          border: 2px solid red;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    main{
+        display: flex;
+        max-width: 57.5rem;
+    }
+    p{
+        margin-bottom: 5.25rem;
+    }
+    a:hover{
+        color: var(--grey);
+        background: transparent;
+    }
+    .sedans{
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxuosos{
+        border-radius: 0 8px 8px 0;
+    }
 }
